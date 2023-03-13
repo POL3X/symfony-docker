@@ -1,0 +1,19 @@
+services:
+  user.controller.create:
+    class: 'App\User\Infrastructure\Controller\User\CreateUserController'
+    arguments:
+      - '@user.handler.create'
+    public: true
+  
+  user.controller.findOneByEmail:
+    class: 'App\User\Infrastructure\Controller\User\FindUserByEmailController'
+    arguments:
+      - '@user.handler.findOneByEmail'
+    public: true
+    
+  user.controller.login:
+    class: 'App\User\Infrastructure\Controller\User\UserLoginController'
+    arguments:
+      - '@user.service.login'
+    public: true
+    

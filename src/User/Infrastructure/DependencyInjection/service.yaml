@@ -1,0 +1,8 @@
+services:
+  user.service.login:
+    class: 'App\User\Infrastructure\Services\JwtAuthService'
+    arguments:
+      - '@security.user_password_hasher'
+      - '@lexik_jwt_authentication.encoder.lcobucci'
+      - '@user.handler.findOneByEmail'
+      

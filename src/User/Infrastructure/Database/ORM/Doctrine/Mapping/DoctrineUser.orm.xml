@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<doctrine-mapping xmlns="https://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="App\User\Infrastructure\Database\ORM\Doctrine\Entity\DoctrineUser" table="`User`">
+        <id name="uuid" type="string" length="36"/>
+        <field name="email" type="string" length="180"/>
+        <field name="roles" type="json" />
+        <field name="password" type="string" length="255"/>
+    </entity>
+</doctrine-mapping>

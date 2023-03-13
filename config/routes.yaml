@@ -1,0 +1,7 @@
+user:
+    resource: '../src/User/Infrastructure/Routes/routes.yaml'
+    prefix: 'user'
+
+login: 
+    resource: '../src/User/Infrastructure/Routes/API/routes.yaml'
+    prefix: 'login'

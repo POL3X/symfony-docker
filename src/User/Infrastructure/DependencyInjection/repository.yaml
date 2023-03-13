@@ -1,0 +1,5 @@
+services:
+  user.repository.doctrine:
+    class: 'App\User\Infrastructure\Database\ORM\Doctrine\Repository\DoctrineUserRepository'
+    arguments: 
+      - '@doctrine'

@@ -1,0 +1,11 @@
+services:
+  user.handler.create:
+    class: 'App\User\Application\Request\User\CreateUser'
+    arguments:
+      - '@user.repository.doctrine'
+      - '@security.user_password_hasher'
+
+  user.handler.findOneByEmail:
+    class: 'App\User\Application\Query\User\FindUserByEmailHandler'
+    arguments:
+      - '@user.repository.doctrine'

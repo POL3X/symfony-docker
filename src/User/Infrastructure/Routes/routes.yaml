@@ -1,0 +1,10 @@
+user.create:
+  path: /
+  controller: 'user.controller.create'
+  methods: [ POST ]
+
+user.findOneByEmail:
+  path: /
+  controller: 'user.controller.findOneByEmail'
+  methods: [ GET ]
+
